@@ -34,8 +34,15 @@ module.exports.routes = {
 
   '/': {
     view: 'homepage'
-  }
+  },
 
+  'post /api/student': 'StudentController.add',
+  'post /api/student/id': 'StudentController.create',
+  'get /api/student/list': 'StudentController.list',
+  'get /api/student/id': 'StudentController.show',
+
+  'PUT /api/student/id/edit': 'StudentController.edit',
+  //'DELETE /api/student/id/delete': 'StudentController.delete',
   /***************************************************************************
   *                                                                          *
   * Custom routes here...                                                    *
@@ -46,4 +53,4 @@ module.exports.routes = {
   *                                                                          *
   ***************************************************************************/
 
-};
+}
