@@ -1,17 +1,11 @@
 /**
  * StudentController
  *
- * @description :: Server-side logic for managing students
- * @help        :: See http://sailsjs.org/#!/documentation/concepts/Controllers
+ * @description :: Server-side logic for managing students @help        :: See http://sailsjs.org/#!/documentation/concepts/Controllers
  */
 
 module.exports = {
-  contact: function (req, res) {
-    res.view('contact')
-  },
-
   list: function (req, res) {
-    // res.view('student/list')
     Student.find({}).exec(function (err, students) {
       if (err) {
         res.send(500, {error: 'Database Error'})
@@ -43,7 +37,6 @@ module.exports = {
       phoneNumber: phoneNumber
 
     }).exec(function (err) {
-      console.log(Student)
       if (err) {
         res.send(500, {error: 'Database Error'})
       }
@@ -55,11 +48,16 @@ module.exports = {
   },
 
   show: function (req, res) {
-    res.view('student/show')
+    Student.findOne({id: req.params.id}).exec(function (err, student) {
+      if (err) {
+        res.send(500, {error: 'Database Error'})
+      }
+
+      res.view('student/list', {student: student})
+    })
   },
 
   edit: function (req, res) {
-    // res.view('student/edit')
     Student.findOne({id: req.params.id}).exec(function (err, student) {
       if (err) {
         res.send(500, {error: 'Database Error'})
