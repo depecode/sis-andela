@@ -1,0 +1,59 @@
+<div class="row">
+    <h3>Edit Student Information</h3>
+
+    <div class="col-md-6 offset-md-3">
+        <form method="post" action="/student/update/<%= student.id %>">
+
+            <div class="form-group">
+                <label for="first_name">First Name</label>
+                <input type="text" class="form-control" name="firstName" id="first_name" aria-describedby="firstName" value="
+                <%= student.firstName %>">
+                <small id="firstName" class="form-text text-muted">Your First Name is Required.</small>
+            </div>
+
+            <div class="form-group">
+                <label for="last_name">Last Name</label>
+                <input type="text" class="form-control" name="lastName" id="first_name" aria-describedby="lastName" value="
+                <%= student.lastName %>">
+                <small id="lastName" class="form-text text-muted">Your Last Name is Required.</small>
+            </div>
+
+            <div class="form-group">
+                <label for="middle_name">Middle Name</label>
+                <input type="text" class="form-control" name="middleName" id="middle_name" aria-describedby="middleName" value="
+                <%= student.middleName %>">
+                <small id="middleName" class="form-text text-muted">Your Middle Name is Required.</small>
+            </div>
+
+            <div class="form-group">
+                <label for="gender">Gender</label>
+                <input type="text" class="form-control" name="gender" id="gender" aria-describedby="gender" value="
+                <%= student.gender %>">
+                <small id="gender" class="form-text text-muted">Your Gender is Required.</small>
+            </div>
+
+            <div class="form-group">
+                <label for="birth_date">Birth Date</label>
+                <input type="date" class="form-control" name="birthDate" id="birthDate" aria-describedby="birthDate" value="
+                <%= student.birthDate %>">
+                <small id="birthDate" class="form-text text-muted">Your Birth Date is Required.</small>
+            </div>
+
+            <div class="form-group">
+                <label for="email_address">Email Address</label>
+                <input type="email" class="form-control" name="emailAddress" id="email_address" aria-describedby="emailAddress" value="
+                <%= student.emailAddress %>">
+                <small id="emailAddress" class="form-text text-muted">Your Email Address is Required.</small>
+            </div>
+
+            <div class="form-group">
+                <label for="phone_number">Phone Number</label>
+                <input type="text" class="form-control" name="phoneNumber" id="phone_number" aria-describedby="phoneNumber" value="
+                <%= student.phoneNumber %>">
+                <small id="phoneNumber" class="form-text text-muted">Your Phone Number is Required.</small>
+            </div>
+
+            <button type="submit" class="btn btn-primary">Submit</button>
+        </form>
+    </div>
+</div>
