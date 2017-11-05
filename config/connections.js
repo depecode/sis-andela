@@ -28,8 +28,13 @@ module.exports.connections = {
   * Installed by default.                                                    *
   *                                                                          *
   ***************************************************************************/
-  localDiskDb: {
-    adapter: 'sails-disk'
+  // localDiskDb: {
+  //   adapter: 'sails-disk'
+  // },
+
+  mongodbServer: {
+    adapter: 'sails-mongo',
+    url: 'mongodb://sis-andela:andela1234@ds149335.mlab.com:49335/sis-andela'
   },
 
   /***************************************************************************
@@ -82,11 +87,10 @@ module.exports.connections = {
   //   database: 'YOUR_POSTGRES_DB' //optional
   // }
 
-
   /***************************************************************************
   *                                                                          *
   * More adapters: https://github.com/balderdashy/sails                      *
   *                                                                          *
   ***************************************************************************/
 
-};
+}

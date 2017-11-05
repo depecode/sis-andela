@@ -5,7 +5,7 @@
   "description": "a Sails application",
   "keywords": [],
   "engines": {
-      "node": "6.11.2"
+    "node": "6.11.2"
   },
   "dependencies": {
     "ejs": "2.3.4",
@@ -22,9 +22,11 @@
     "grunt-sails-linker": "~0.10.1",
     "grunt-sync": "0.5.2",
     "include-all": "^1.0.0",
+    "moment": "^2.19.1",
     "rc": "1.0.1",
     "sails": "~0.12.14",
-    "sails-disk": "~0.10.9"
+    "sails-disk": "~0.10.9",
+    "sails-mongo": "^0.12.2"
   },
   "scripts": {
     "debug": "node debug app.js",

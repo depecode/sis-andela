@@ -1,8 +1,16 @@
+<h3 class="align-center">Edit Student Information</h3>
+
 <div class="row">
-    <h3>Edit Student Information</h3>
+    
 
     <div class="col-md-6 offset-md-3">
         <form method="post" action="/student/update/<%= student.id %>">
+
+            <!-- <div class="form-group">
+                <label for="matric_no">Matriculation No</label>
+                <input type="text" class="form-control" name="matricNo" id="matric_no" aria-describedby="matricNo" placeholder="141245">
+                <small id="matricNo" class="form-text text-muted">Your Matric No is six digits.</small>
+            </div> -->
 
             <div class="form-group">
                 <label for="first_name">First Name</label>
@@ -32,12 +40,12 @@
                 <small id="gender" class="form-text text-muted">Your Gender is Required.</small>
             </div>
 
-            <div class="form-group">
+            <!-- <div class="form-group">
                 <label for="birth_date">Birth Date</label>
                 <input type="date" class="form-control" name="birthDate" id="birthDate" aria-describedby="birthDate" value="
                 <%= student.birthDate %>">
                 <small id="birthDate" class="form-text text-muted">Your Birth Date is Required.</small>
-            </div>
+            </div> -->
 
             <div class="form-group">
                 <label for="email_address">Email Address</label>
