@@ -1,4 +1,4 @@
-<h3 class="align-center">Student Information</h3>
+<h3 class="align_center">Student Information</h3>
 
 <h5><a href="/student/add" class="btn btn-primary">Add Student</a></h5>
 
@@ -29,7 +29,7 @@
                         <a href="/student/edit/<%= student.id %>" class="btn btn-primary">Edit</a>
                     </td>
                     <td>
-                        <form action="/student/delete/<%- student.id %>" method="post">
+                        <form action="/student/delete/<%= student.id %>" method="post">
                             <input type="submit" value="Delete" class="btn btn-danger">
                         </form>
                     </td>

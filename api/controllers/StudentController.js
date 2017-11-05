@@ -70,31 +70,28 @@ module.exports = {
   },
 
   update: function (req, res) {
-    // var matricNo = req.body.matricNo
     var firstName = req.body.firstName
     var lastName = req.body.lastName
     var middleName = req.body.middleName
     var gender = req.body.gender
-    // var birthDate = req.body.birthDate
     var emailAddress = req.body.emailAddress
     var phoneNumber = req.body.phoneNumber
 
     Student.update({id: req.params.id}, {
-      // matricNo: matricNo,
+
+      firstName: firstName,
       lastName: lastName,
       middleName: middleName,
       gender: gender,
-      // birthDate: birthDate,
       emailAddress: emailAddress,
       phoneNumber: phoneNumber
 
     }).exec(function (err) {
       if (err) {
         res.send(500, {error: 'Server Error'})
-        return;
-      }else {
-        res.redirect('/student/list')
       }
+      
+      res.redirect('/student/list')
     })
 
     return false

@@ -1,4 +1,4 @@
-<h3 class="align-center">Edit Student Information</h3>
+<h3 class="align_center">Edit Student Information</h3>
 
 <div class="row">
     
@@ -6,22 +6,18 @@
     <div class="col-md-6 offset-md-3">
         <form method="post" action="/student/update/<%= student.id %>">
 
-            <!-- <div class="form-group">
-                <label for="matric_no">Matriculation No</label>
-                <input type="text" class="form-control" name="matricNo" id="matric_no" aria-describedby="matricNo" placeholder="141245">
-                <small id="matricNo" class="form-text text-muted">Your Matric No is six digits.</small>
-            </div> -->
+            
 
-            <div class="form-group">
+            <!-- <div class="form-group">
                 <label for="first_name">First Name</label>
                 <input type="text" class="form-control" name="firstName" id="first_name" aria-describedby="firstName" value="
                 <%= student.firstName %>">
                 <small id="firstName" class="form-text text-muted">Your First Name is Required.</small>
-            </div>
+            </div> -->
 
             <div class="form-group">
                 <label for="last_name">Last Name</label>
-                <input type="text" class="form-control" name="lastName" id="first_name" aria-describedby="lastName" value="
+                <input type="text" class="form-control" name="lastName" id="last_name" aria-describedby="lastName" value="
                 <%= student.lastName %>">
                 <small id="lastName" class="form-text text-muted">Your Last Name is Required.</small>
             </div>
@@ -40,12 +36,7 @@
                 <small id="gender" class="form-text text-muted">Your Gender is Required.</small>
             </div>
 
-            <!-- <div class="form-group">
-                <label for="birth_date">Birth Date</label>
-                <input type="date" class="form-control" name="birthDate" id="birthDate" aria-describedby="birthDate" value="
-                <%= student.birthDate %>">
-                <small id="birthDate" class="form-text text-muted">Your Birth Date is Required.</small>
-            </div> -->
+           
 
             <div class="form-group">
                 <label for="email_address">Email Address</label>

@@ -5,7 +5,7 @@
  * @docs        :: http://sailsjs.org/documentation/concepts/models-and-orm/models
  */
 
- var moment = require('moment');
+
 
 module.exports = {
   attributes: {
